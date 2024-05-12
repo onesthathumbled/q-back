@@ -6,8 +6,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 os.environ['PATH'] += r"./chromedriver-win64/chromedriver.exe"
-email = "onesthathumbled@gmail.com"
-password = "Onlythingiknowisnothing.28"
+email = os.getenv("EMAIL")
+password = os.getenv("PASSWORD")
 
 # Configure Chrome options to disable notifications
 chrome_options = webdriver.ChromeOptions()
