@@ -11,6 +11,7 @@ password = os.getenv("PASSWORD")
 
 # Configure Chrome options to disable notifications
 chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument("--headless") 
 chrome_options.add_argument("--disable-notifications")
 
 # Initialize Chrome WebDriver with configured options
